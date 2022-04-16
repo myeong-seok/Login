@@ -1,0 +1,234 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.container {
+    margin: 100px auto;
+    /* padding: 20px 24px 25px; */
+    width: 520px;
+    background-color: #ffffff;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.header {
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.title {
+    width: 144px;
+    margin: 20px 148px 18px 188px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    color: #000000;
+}
+
+.close_btn {
+    display: flex;
+    margin: 22px 24px 20px 0;
+    background: url(img/close.png) no-repeat;
+    background-size: cover;
+    border: none;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.sub_title {
+    width: 369px;
+    margin: 26px 127px 24px 24px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.id {
+    display: block;
+    margin: 0 auto;
+    width: 472px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.pw {
+    display: block;
+    margin: 10px auto 17px;
+    width: 472px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit {
+    display: block;
+    width: 472px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #2f80ed;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.join_find {
+    display: flex;
+}
+
+.join {
+    display: inline-block;
+    width: 52px;
+    height: 18px;
+    margin: 20px 12px 30px 158px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+    box-sizing: border-box;
+}
+
+.bar{
+    width: 1px;
+    height: 18px;
+    border-right: 1px solid #767676;
+}
+
+.find {
+    display: inline-block;
+    width: 125px;
+    height: 18px;
+    margin: 20px 157px 30px 12px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+}
+
+.or_txt {
+    width: 26px;
+    margin: 0 auto 19px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+    position: relative;
+}
+
+.or_txt::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 40px;
+    background-color: #c4c4c4;
+    width: 210px;
+    height: 1px;
+}
+
+.or_txt::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 40px;
+    background-color: #c4c4c4;
+    width: 210px;
+    height: 1px;
+}
+
+a.btn {
+    margin: 0 auto 10px;
+    width: 472px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #767676;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #767676;
+    position: relative;
+}
+
+a.btn2 {
+    border: 1px solid #2D9CDB;
+}
+
+a.btn3 {
+    border: 1px solid #00BF18;
+}
+
+a.btn4 {
+    border: 1px solid #F2C94C;
+}
+
+a.btn1::before{
+    content: url(img/Google__G__Logo\ 1.png);
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+
+a.btn2::before{
+    content: url(img/facebook.png);
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+
+a.btn3::before{
+    content: url(img/naver-logo.png);
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+
+a.btn4::before{
+    content: url(img/message-circle.png);
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
