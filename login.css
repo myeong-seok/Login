@@ -10,16 +10,16 @@ li {
 
 ul {
     padding: 0;
+    margin: 0;
 }
 
 .container {
     margin: 100px auto;
-    /* padding: 20px 24px 25px; */
     width: 520px;
     background-color: #ffffff;
     border: 1px solid #c4c4c4;
     border-radius: 10px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .header {
@@ -68,6 +68,7 @@ ul {
 .id {
     display: block;
     margin: 0 auto;
+    padding: 0;
     width: 472px;
     height: 50px;
     background-color: #ffffff;
@@ -78,7 +79,8 @@ ul {
 
 .pw {
     display: block;
-    margin: 10px auto 17px;
+    margin: 10px auto 16px;
+    padding: 0;
     width: 472px;
     height: 50px;
     background-color: #ffffff;
@@ -86,12 +88,39 @@ ul {
     border-radius: 5px;
     box-sizing: border-box;
 }
+.check{
+    visibility: hidden;
+}
+
+.check + label {
+    content: "";
+    display: inline-block;
+    cursor: pointer;
+    line-height: 22px;
+    padding-left: 30px;
+    background: url(./img/icon_check_empty.png) left/22px no-repeat;
+}
+
+.login_state {
+    width: 111px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #767676;
+}
+
+.check:checked + label {
+    background-image: url(./img/icon_check.png);
+}
 
 .submit {
     display: block;
     width: 472px;
     height: 50px;
-    margin: 0 auto;
+    margin: 20px auto 0;
+    padding: 0;
     background-color: #2f80ed;
     border-radius: 5px;
     border: none;
@@ -110,9 +139,9 @@ ul {
 
 .join {
     display: inline-block;
-    width: 52px;
+    width: 64px;
     height: 18px;
-    margin: 20px 12px 30px 158px;
+    margin: 20px 0 30px 158px;
     font-family: 'Spoqa Han Sans Neo';
     font-style: normal;
     font-weight: 400;
@@ -122,10 +151,13 @@ ul {
     box-sizing: border-box;
 }
 
-.bar{
+.join::after {
+    float: right;
+    display: block;
+    content: '';
     width: 1px;
     height: 18px;
-    border-right: 1px solid #767676;
+    background-color: #767676;
 }
 
 .find {
@@ -143,7 +175,7 @@ ul {
 
 .or_txt {
     width: 26px;
-    margin: 0 auto 19px;
+    margin: 0 auto 20px;
     font-family: 'Spoqa Han Sans Neo';
     font-style: normal;
     font-weight: 400;
@@ -203,6 +235,7 @@ a.btn3 {
 
 a.btn4 {
     border: 1px solid #F2C94C;
+    margin-bottom: 25px;
 }
 
 a.btn1::before{

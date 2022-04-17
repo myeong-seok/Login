@@ -16,20 +16,18 @@
         <article>
             <h2 class="sub_title">위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
             <form class="login_input" action="#">
-                <input class="id" type="text" placeholder="아이디" required>
-                <input class="pw" type="password" name="" id="" placeholder="비밀번호" required>
-            </form>
-            <div class="">
-                <button><img src="./img/icon_check_empty.png" alt=""></button>
-                <span>로그인 상태유지</span>
-            </div>
-            <form action="#">
+                <input class="id" type="text" placeholder="아이디" required 
+                oninvalid="this.setCustomValidity('아이디를 입력해 주세요.')"
+                oninput="this.setCustomValidity('')">
+                <input class="pw" type="password" name="" id="" placeholder="비밀번호">
+                <input type="checkbox" class="check" id="login_state">
+                <label for="login_state" class="login_state">로그인 상태 유지</label>
                 <input class="submit" type="submit" value="로그인">
             </form>
-            <div class="join_find">
-                <a href="#" class="join">회원가입</a>
-                <a href="#" class="find">아이디/비밀번호 찾기</a>
-            </div>
+            <ul class="join_find">
+                <li><a href="#" class="join">회원가입</a></li>
+                <li><a href="#" class="find">아이디/비밀번호 찾기</a></li>
+            </ul>
         </article>
         <div class="or_txt">또는</div>
         <ul>
